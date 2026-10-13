@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Key Practice</title>
+    <meta name="description" content="Practice random major keys, their relative minors, and major scales.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <header><span class="mark" aria-hidden="true">♪</span> KEY PRACTICE</header>
+        <section class="intro">
+            <h1>A little practice. Every key.</h1>
+            <p>Pick a random key, test what you know, then reveal the answers.</p>
+        </section>
+        <section class="key-card" aria-label="Current major key">
+            <div class="eyebrow">Your random key</div>
+            <div id="key" class="key" aria-live="polite"></div>
+            <div class="major">major</div><button class="next" id="next">New random key <span
+                    aria-hidden="true">↗</span></button>
+            <p class="hint">Space / N / ← / → · New key<br>M · Relative minor &nbsp; S · Major scale</p>
+        </section>
+        <div class="answers">
+            <section class="answer">
+                <h2>Relative minor</h2>
+                <div id="minor" class="result" aria-live="polite"><span class="hidden-copy">Can you name the relative
+                        minor?</span></div><button id="reveal-minor" aria-expanded="false" aria-controls="minor">Reveal
+                    relative minor</button>
+            </section>
+            <section class="answer">
+                <h2>Major scale</h2>
+                <div id="scale" class="result" aria-live="polite"><span class="hidden-copy">Can you name all seven
+                        notes?</span></div><button id="reveal-scale" aria-expanded="false" aria-controls="scale">Reveal
+                    major scale</button>
+            </section>
+        </div>
+        <p class="footer">12 keys · One small habit · Endless practice</p>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
